@@ -1,94 +1,243 @@
-North East Trip Itinerary
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		html, body {
+	margin: 0 0 5em 0;
+	padding: 0;
+}
 
-Day 1  (Delhi to Assam)
-Delhi to Guwahati Airport
-Stay at IIT Guwahati hostel
-local sightseeing, ferry ride
+h1 {
+	font-style: italic;
+	font-size: 60px;
+	font-weight: 100;
+	position: relative;
+	margin-top: 0;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0; left: 0;
+		border-bottom: 1px solid #CBB46E;
+		width: 35%;
+	}
+}
 
-Day2  (Assam)
-Guwahati to Tezpur bus
-(if reach on time can take direct taxi to Tawang, else next morning)
-Tezpur stay
-Local visits
-Taxi Bookings done for Tawang
+h2 {
+	background: #2A2B31;
+	color: #ffffff;
+	font-weight: 100;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 1em 0;
+	margin-bottom: .5em;
+}
 
-Day3 (Arunachal)
-Early 5am taxi to Tawang
-*Need InnerLinePermit , through Sela Pass
-Reach Tawang around 7pm(12-14hr)
-Tawang overnight stay
+h3 {
+	margin: 5px 0;
+	color: #73573a;
+	font-size: 20px;
+	font-weight: 100;
+}
 
-Day4 (Arunachal)
-Tawang local tourism - Monastery, 5pm Army documentary, Stupa, Chorchen, Ani Gompa
-Book taxi to Bumla Pass (China Border) prepare documents and permit
-overnight stay
+.block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-image: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?q=80&fm=jpg&s=fa68c48c66a390579ae96eff13922404);
+	background-size: cover;
+	background-position: center;
+	.block__item {
+		flex: 0 1 50%;
+		font-style: italic;
+		.block__inner {
+			padding: 2em 3em;
+			
+			@media (max-width: 550px) {
+				padding: 1em;
+			}
+		}
+		
+		@media (max-width: 950px) {
+			flex: 0 1 100%;
+		}
+	}
+	
+	.block__description {
+		line-height: 22px;
+		&:first-letter {
+			float: left;
+			font-size: 55px;
+			line-height: 40px;
+			padding: 0 .25em;
+		}
+	}
+}
 
-Day5 (Arunachal to Assam)
-8am Taxi to Bumla Pass
-Same evening back
-Book taxi to Tezpur
-Overnight stay
+.list {
+	font-family: "Myriad Pro", sans-serif;
+	font-style: normal;
+	background-color: #a5c0ce;
+	margin-left: 100px;
+	padding: 1.5em 0;
+	margin-bottom: 3em;
+	
+	.list__item {
+		float: left;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.list__time {
+			color: #CBB46E;
+			width: 25%;
+			text-align: center;
+		}
+		.list__desc {
+			width: 60%;
+			border-bottom: 1px solid #484C56;
+			color: #ffffff;
+			font-size: 15px;
+			line-height: 22px;
+			padding: 1em;
+			position: relative;
+			.border {
+				background: #2A2B31;
+				width: 3px;
+				position: absolute;
+				top: 0;
+				bottom: -1px;
+				left: -8%;
+				&:after {
+					content: "";
+					background: #3E414E;
+					border: 5px solid #2A2B31;
+					border-radius: 50%;
+					position: absolute;
+					top: 50%;
+					margin-top: -9px;
+					left: -7px;
+					width: 8px;
+					height: 8px;
+				}
+				@media (max-width: 550px) {
+					left: -5%;
+				}
+			}
+		}
+		&:last-of-type {
+			.list__desc {
+				border-bottom: none;
+				.border {
+					&:before {
+						content: "";
+						background: #2A2B31;
+						border-radius: 50%;
+						height: 9px; 
+						width: 9px;
+						position: absolute;
+						bottom: -8px;
+						left: -3px;
+					}
+				}
+			}
+		}
+		&:first-of-type {
+			.list__desc {
+				border-bottom: none;
+				.border {
+					&:before {
+						content: "";
+						background: #2A2B31;
+						border-radius: 50%;
+						height: 9px; 
+						width: 9px;
+						position: absolute;
+						top: -8px;
+						left: -3px;
+					}
+				}
+			}
+		}
+	}
+}
+	</style>
+</head>
+<body>
 
-Day6 (Assam)
-6am Taxi to Tezpur (12-14hr)
-*option to halt at Bomdilla & Bhalukpong
-Overnight stay
-
-Day7 (Assam)
-Early morning bus to Kaziranga
-reach Kaziranga national park 
-Get safari bookings at counter (limited slots)
-*elephant ride/jeep safari - central/western region -
-Overnight stay in Kaziranga (pre-bookings suggested)
-Kaziranga evening cultural night
-
-Day8 (Assam)
-Leave for Majuli River island (through Jorhat) by bus
-Reach Jorhat - get a taxi ride to ferry side
-Ferry to Majuli island
-Local bus to Majuli town
-River side Cottage Stay at Majuli
-
-Day9 (Assam)
-Local sightseeing in Majuli island - boating, temples, local food, rice beer making
-Overnight stay
-
-Day10 (Assam)
-Leave for Jorhat, through ferry
-Jorhat to Guwahati by overnight train
-
-Day11 (Meghalaya)
-Guwahati to Shillong by taxi
-Shillong stay
-
-Day12 (Meghalaya)
-Shillong nearby tourism
-Shillong to Cherapunjee by taxi
-Cherapunjee -Nongriat village overnight stay
-
-Day13 (Meghalaya)
-Trek to Living roots bridge
-Local trek - waterfalls, cave
-Stay in Cherapunjee 
-
-Day14  (Meghalaya)
-Trek back to Cherapunjee -
-*can visit Mawlynnong village/Dawki lake
-Taxi to Guwahati via Shillong
-Stay in Guwahati
-
-Day 15 (Assam to Delhi)
-Guwahati local visits
-Flight to Delhi :)
-
-
-
-BUDGET
-
-Round trip to Guwahat - 6k
-Stay in hostel - Free
-Hotel stays - 12 nights stay
-Taxi, train, bus
-Permits
-
-15 day trip Total = approx 18-22k + flight
+<div class="block">
+	<div class="block__item">
+		<div class="block__inner">
+			<h1>North East Trip Itinerary</h1>
+			<div class="block__description">
+				<p>In suscipit efficitur viverra. Ut viverra ante velit, nec feugiat eros gravida eu. Duis tempus placerat pulvinar. Nullam non ipsum tincidunt, scelerisque odio ut, pellentesque risus. Suspendisse a nibh in diam eleifend rhoncus. Duis nec vestibulum risus, a eleifend eros. Vivamus lectus ligula, pretium et ullamcorper in, molestie non leo. Duis sit amet nunc sed lectus aliquet interdum a nec purus.</p>
+				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed massa turpis, pulvinar ut ullamcorper sit amet, egestas a sapien. Maecenas ac massa et sem luctus bibendum tempor vel arcu.</p>
+			</div>
+		</div>
+	</div>
+	<div class="block__item">
+		<div class="block__inner">
+			<h2>Travel Itinerary</h2>
+			<div class="list">
+				<div class="list__item">
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>Day 1  (Delhi to Assam)</h3>
+						<div>Delhi to Guwahati Airport
+						Stay at IIT Guwahati hostel<br>
+						local sightseeing, ferry ride</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>Day2  (Assam)
+						Guwahati to Tezpur bus
+						</h3>
+						<div>(if reach on time can take direct taxi to Tawang, else next morning)
+						Tezpur stay<br>
+						Local visits<br>
+						Taxi Bookings done for Tawang<br></div>
+						<div>Pick up: 8:00 am</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__time">2:00 pm</div>
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>The Savoy</h3>
+						<div>425 Ocean Drive, Miami Beach, FL 33139</div>
+						<div>Check-in: 2:00 pm</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__time">7:00 pm</div>
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>Events</h3>
+						<div>Motley Crue American Airlines Arena</div>
+						<div>Showtime: 7:00 pm</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__time">12:00 am</div>
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>Returning Flight</h3>
+						<div>Southwest #80293 Gate: 515</div>
+						<div>Boarding: 11:00 am Destination: Denver, CO</div>
+						<div class="border"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
